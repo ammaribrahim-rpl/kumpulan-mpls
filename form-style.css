@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom right, lightblue, darkblue);
+    background-size: 300%;
+    animation: gradient 7s infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 40%;
+}
+
+fieldset{
+    background-color: white;
+    border: none;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+legend{
+    background-color: dodgerblue;
+    padding: 16px 48px;
+    border-radius: 100px;
+    color: white;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+
+.form-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 24px;
+    box-sizing: border-box;
+}
+
+input, label, button{
+    padding: 8px;
+}
+
+.btn-login{
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    padding: 16px 0;
+    margin-top: 16px;
+}
+
+.btn-login:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+/* animasi gradient */
+
+@keyframes gradient {
+    0%{
+        background-position: center;
+    }25%{
+        background-position: right;
+        background-size: 250%;
+    }50%{
+        background-position: left;
+        background-size: 350%;
+    }75%{
+        background-position: bottom right;
+        background-size: 200%;
+    }100%{
+        background-position: center;
+    }
+}

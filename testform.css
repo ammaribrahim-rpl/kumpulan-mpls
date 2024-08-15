@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #03346E, #3DC2EC);
+    background-size: 300%;
+    animation: gradient 7s infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    justify-content: center;
+    display: flex;
+    color: #4E31AA;
+}
+
+.container{
+    width: 40%;
+}
+
+fieldset{
+    background-color: #D1E9F6;
+    border: none;
+    border-radius: 16px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.form-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 24px;
+    box-sizing: border-box;
+    color: #4E31AA;
+}
+
+input, label, button{
+    padding: 8px;
+}
+
+.btn-request{
+    background-color: #8CABFF;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 16px 0;
+    margin-top: 16px;
+}
+
+.btn-request:hover{
+    background-color: #35155D;
+    cursor: pointer;
+}
+
+.checkbox{
+    flex-direction: column;
+    padding: 8px 24px;
+    color: #4E31AA;
+}
+
+.radio{
+    flex-direction: column;
+    padding: 8px 24px;
+    color: #4E31AA;
+}
+
+@keyframes gradient{
+    0%{
+        background-position: center;
+    }25%{
+        background-position: right;
+        background-size: 250%;
+    }50%{
+        background-position: left;
+        background-size: 350%;
+    }75%{
+        background-position: bottom-right;
+        background-size: 200%;
+    }100%{
+        background-position: center;
+    }
+}
